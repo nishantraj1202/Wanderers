@@ -1,5 +1,5 @@
 import React from 'react';
-import { Star, Quote } from 'lucide-react';
+import { Star, Quote, Users, Heart, MapPin, Settings, Car } from 'lucide-react';
 
 const Testimonials: React.FC = () => {
   const testimonials = [
@@ -219,6 +219,86 @@ const Testimonials: React.FC = () => {
 
         {/* CTA Section */}
         <div className="bg-sage-50 rounded-2xl p-8 md:p-12 text-center animate-slide-up">
+          {/* Services Section */}
+          <div className="mb-12">
+            <h2 className="font-poppins font-bold text-3xl text-earth-800 mb-6">
+              Our Travel Services
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-8">
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Users className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Group Tour Packages
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  Join like-minded travelers on exciting group adventures with professional guides
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Heart className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Family Packages
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  Kid-friendly destinations and activities perfect for family bonding and memories
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Star className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Religious Packages
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  Spiritual journeys including Chardham Yatra and other sacred pilgrimages
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <MapPin className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Foreign Countries Packages
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  International travel experiences with visa support and local expertise
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Settings className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Customized Tour Packages
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  Tailor-made travel experiences designed specifically for your preferences
+                </p>
+              </div>
+              
+              <div className="bg-white rounded-xl shadow-lg p-6 hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                <div className="bg-earth-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <Car className="h-8 w-8 text-earth-600" />
+                </div>
+                <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-2">
+                  Rental Cars
+                </h3>
+                <p className="font-roboto text-gray-600 text-sm">
+                  Self-drive options with well-maintained vehicles for independent exploration
+                </p>
+              </div>
+            </div>
+          </div>
+          
           <h2 className="font-poppins font-bold text-3xl text-earth-800 mb-4">
             Ready to Create Your Own Story?
           </h2>

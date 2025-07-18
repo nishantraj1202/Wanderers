@@ -145,6 +145,16 @@ const Home: React.FC = () => {
               <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
             </Link>
             
+            <Link
+              to="/adventure-destinations"
+              className="group relative bg-gradient-to-r from-sage-600 to-sage-700 hover:from-sage-700 hover:to-sage-800 text-white px-10 py-5 rounded-2xl font-roboto font-semibold text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl flex items-center justify-center overflow-hidden"
+            >
+              <div className="absolute inset-0 bg-white/20 transform -skew-x-12 -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              <Compass className="mr-3 h-6 w-6" />
+              Explore Adventure Sites
+              <ArrowRight className="ml-3 h-6 w-6 group-hover:translate-x-2 transition-transform" />
+            </Link>
+            
             <button className="group relative border-2 border-white/50 backdrop-blur-sm text-white hover:bg-white hover:text-earth-800 px-10 py-5 rounded-2xl font-roboto font-semibold text-lg transition-all duration-300 transform hover:scale-105 flex items-center justify-center">
               <Play className="mr-3 h-6 w-6" />
               Watch Journey 

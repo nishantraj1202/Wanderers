@@ -7,6 +7,7 @@ import TripDetails from './pages/TripDetails';
 import Gallery from './pages/Gallery';
 import Testimonials from './pages/Testimonials';
 import Contact from './pages/Contact';
+import AdventureDestinations from './pages/AdventureDestinations';
 import Login from './pages/Login';
 import Register from './pages/Register';
 import Dashboard from './pages/Dashboard';
@@ -22,6 +23,7 @@ function App() {
           <Route path="/trip/:id" element={<TripDetails />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/adventure-destinations" element={<AdventureDestinations />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />

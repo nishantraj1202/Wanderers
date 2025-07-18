@@ -14,6 +14,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
   const navigation = [
     { name: 'Home', href: '/' },
     { name: 'Destinations', href: '/destinations' },
+    { name: 'Adventure Sites', href: '/adventure-destinations' },
     { name: 'Gallery', href: '/gallery' },
     { name: 'Testimonials', href: '/testimonials' },
     { name: 'Contact', href: '/contact' },
@@ -181,6 +182,7 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
               <h3 className="font-poppins font-semibold text-lg mb-4">Quick Links</h3>
               <ul className="space-y-2 font-roboto">
                 <li><Link to="/destinations" className="text-earth-200 hover:text-white transition-colors">Destinations</Link></li>
+                <li><Link to="/adventure-destinations" className="text-earth-200 hover:text-white transition-colors">Adventure Sites</Link></li>
                 <li><Link to="/gallery" className="text-earth-200 hover:text-white transition-colors">Gallery</Link></li>
                 <li><Link to="/testimonials" className="text-earth-200 hover:text-white transition-colors">Reviews</Link></li>
                 <li><Link to="/contact" className="text-earth-200 hover:text-white transition-colors">Contact</Link></li>

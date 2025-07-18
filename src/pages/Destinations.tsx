@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { Star, MapPin, Clock, Users, Filter, Search, UserPlus, ExternalLink } from 'lucide-react';
+import { Star, MapPin, Clock, Users, Filter, Search, UserPlus, ExternalLink, Heart, Settings, Car } from 'lucide-react';
 
 const Destinations: React.FC = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -151,6 +151,44 @@ const Destinations: React.FC = () => {
 
         {/* Search and Filters */}
         <div className="bg-white rounded-xl shadow-lg p-6 mb-8 animate-slide-up">
+          {/* Service Type Selection */}
+          <div className="mb-6 pb-6 border-b border-gray-200">
+            <h3 className="font-poppins font-semibold text-lg text-earth-800 mb-4">
+              Choose Your Travel Service
+            </h3>
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-3">
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <Users className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Group Tours</span>
+              </button>
+              
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <Heart className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Family</span>
+              </button>
+              
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <Star className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Religious</span>
+              </button>
+              
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <MapPin className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Foreign</span>
+              </button>
+              
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <Settings className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Customized</span>
+              </button>
+              
+              <button className="flex flex-col items-center p-3 border-2 border-earth-200 rounded-lg hover:border-earth-500 hover:bg-earth-50 transition-all duration-300 group">
+                <Car className="h-6 w-6 text-earth-600 mb-2 group-hover:scale-110 transition-transform" />
+                <span className="font-roboto text-sm font-medium text-gray-700 group-hover:text-earth-700">Car Rental</span>
+              </button>
+            </div>
+          </div>
+          
           <div className="grid grid-cols-1 md:grid-cols-5 gap-4">
             {/* Search */}
             <div className="relative">

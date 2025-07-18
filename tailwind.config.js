@@ -70,6 +70,9 @@ export default {
           '60%': { transform: 'translateY(-5px)' },
         },
       },
+      backdropBlur: {
+        xs: '2px',
+      },
     },
   },
   plugins: [],
