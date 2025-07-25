@@ -76,7 +76,7 @@ const Home: React.FC = () => {
             playsInline
             className="absolute inset-0 w-full h-full object-cover"
           >
-            <source src="src/assets/77357241-63fc-4b05-9ddd-ee72a43b2b73.mp4"type="video/mp4" />
+            <source src="public/77357241-63fc-4b05-9ddd-ee72a43b2b73.mp4"type="video/mp4" />
           </video>
           <audio autoPlay loop muted={isMuted} className="hidden">
             <source src="src/assets/audio.mp3" type="audio/mp3" />
